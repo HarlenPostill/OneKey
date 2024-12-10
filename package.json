@@ -1,0 +1,58 @@
+{
+  "name": "onekey-intellisense",
+  "displayName": "OneKey IntelliSense",
+  "description": "Allows for dynamic IntelliSense for dictionary keys using the dictionary.json native key approach",
+  "version": "1.0.5",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "icon": "resources/logo.png",
+  "publisher": "OTHarlen",
+  "activationEvents": [
+    "workspaceContains:dictionary.json",
+    "onLanguage:typescript",
+    "onLanguage:javascript",
+    "onLanguage:typescriptreact",
+    "onLanguage:javascriptreact"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+        {
+            "command": "dictionary-intellisense.editValue",
+            "title": "Edit Dictionary Value"
+        },
+        {
+            "command": "dictionary-intellisense.createKey",
+            "title": "Create Dictionary Key"
+        },
+        {
+          "command": "dictionary-intellisense.selectDictionary",
+          "title": "Select Dictionary File",
+          "category": "Dictionary"
+        }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.95.0",
+    "@types/mocha": "^10.0.9",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.10.0",
+    "@typescript-eslint/parser": "^8.7.0",
+    "eslint": "^9.13.0",
+    "typescript": "^5.6.3",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}
