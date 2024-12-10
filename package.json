@@ -11,6 +11,10 @@
   ],
   "icon": "resources/logo.png",
   "publisher": "OTHarlen",
+  "repository": {
+    "type": "git", 
+    "url": "https://github.com/HarlenPostill/OneKey"
+  },
   "activationEvents": [
     "workspaceContains:dictionary.json",
     "onLanguage:typescript",
