@@ -2,15 +2,17 @@
 
 Provides intelligent IntelliSense support for dictionary.json files in your workspace.
 
-![Dictionary IntelliSense Demo](resources/Demo.gif)
-
 ## Features
 
 - Auto-completion intelliSense for dictionary keys
+![Dictionary IntelliSense Demo](resources/IntelisenseDemo.gif)
 - Go to definition support
+![Instant Go to definitions](resources/OnClick.gif)
 - OnHover Key information
+![Instantly Edit Keys](resources/Demo.gif)
 - Edit dictionary values directly from your code
 - Create new dictionary keys inline
+![Create new Keys Instantly](resources/NewKey.gif)
 
 ## Requirements
 
@@ -48,3 +50,7 @@ HotPatch with features:
 ### 1.0.6
 
 Updated Logo & Branding
+
+### 1.0.7
+
+Updated ReadMe
