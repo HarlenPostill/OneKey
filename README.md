@@ -6,15 +6,15 @@ Provides intelligent IntelliSense support for dictionary.json files in your work
 
 ## Features
 
-- Auto-completion for dictionary keys
+- Auto-completion intelliSense for dictionary keys
 - Go to definition support
-- Hover information
+- OnHover Key information
 - Edit dictionary values directly from your code
 - Create new dictionary keys inline
 
 ## Requirements
 
-- A dictionary.json file in your workspace
+- A dictionary.json file in your workspace (you can swap out this directory at any time)
 - TypeScript/JavaScript/React files using the dictionary
 
 ## Usage
@@ -26,10 +26,9 @@ Provides intelligent IntelliSense support for dictionary.json files in your work
 
 ## Extension Settings
 
-This extension uses the following commands:
+This extension uses the following command:
 
-* `dictionary-intellisense.editValue`: Edit a dictionary value
-* `dictionary-intellisense.createKey`: Create a new dictionary key
+* `dictionary-intellisense.selectDictionary`: Swap Dictionary File
 
 ## Release Notes
 
@@ -45,3 +44,7 @@ Initial release with core features:
 HotPatch with features:
 - Hot Dictionary Switching
 - Saved Dictionary Preferences
+
+### 1.0.6
+
+Updated Logo & Branding
