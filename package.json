@@ -2,7 +2,7 @@
   "name": "onekey-intellisense",
   "displayName": "OneKey IntelliSense",
   "description": "Allows for dynamic IntelliSense for dictionary keys using the dictionary.json native key approach",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "engines": {
     "vscode": "^1.95.0"
   },
